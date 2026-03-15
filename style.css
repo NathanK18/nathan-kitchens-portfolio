@@ -23,6 +23,12 @@ body {
   margin-bottom: 10px;
 }
 
+.role {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  color: #e2e8f0;
+}
+
 .hero h2 {
   font-size: 1.2rem;
   font-weight: normal;
@@ -30,55 +36,51 @@ body {
   color: #cbd5e1;
 }
 
-.featured-project {
+.featured {
   max-width: 900px;
   margin: 0 auto;
-  background: white;
-  color: #1f2933;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.featured-project h3 {
-  font-size: 2.1rem;
-  margin-bottom: 6px;
-}
-
-.featured-project p {
+.featured p {
   margin-bottom: 18px;
   font-size: 1.08rem;
 }
 
-.button-group {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: nowrap;
-  margin-top: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
 }
 
-.button-group a {
+.buttons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 220px;
-  padding: 16px 32px;
-  border: 3px solid #2563eb;
+  padding: 14px 28px;
+  border: 2px solid #60a5fa;
   border-radius: 12px;
-  background-color: white;
-  color: #2563eb;
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 700;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: 0.2s ease;
-}
-
-.button-group a:hover {
   background-color: #2563eb;
   color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttons a:hover,
+.buttons a:focus-visible {
+  background-color: #1d4ed8;
   transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.buttons a:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 3px;
 }
 
 main {
@@ -119,24 +121,16 @@ main section a:hover {
     font-size: 2.2rem;
   }
 
-  .hero h2 {
+  .hero h2,
+  .role {
     font-size: 1rem;
   }
 
-  .featured-project,
   main section {
     padding: 20px;
   }
 
-  .featured-project h3 {
-    font-size: 1.7rem;
-  }
-
-  .button-group {
-    flex-wrap: wrap;
-  }
-
-  .button-group a {
+  .buttons a {
     width: 100%;
     max-width: 280px;
   }
