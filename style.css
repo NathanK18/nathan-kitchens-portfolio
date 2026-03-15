@@ -1,55 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background: #f7f7f7;
-    color: #222;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #1f2933;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 35px;
+  color: #cbd5e1;
+}
+
+.featured-project {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  color: #1f2933;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.featured-project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.featured-project p {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button-group a,
+main section a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.button-group a:hover,
+main section a:hover {
+  background-color: #1d4ed8;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+main section {
+  background: white;
+  margin-bottom: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
   }
-  
-  .hero {
-    padding: 60px 20px;
-    background: white;
-    text-align: center;
+
+  .hero h2 {
+    font-size: 1rem;
   }
-  
-  h1 {
-    margin-bottom: 10px;
-    font-size: 3rem;
+
+  .featured-project,
+  main section {
+    padding: 20px;
   }
-  
-  .role {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .featured {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 24px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fafafa;
-  }
-  
-  .buttons a {
-    display: inline-block;
-    margin: 10px 8px 0;
-    padding: 10px 16px;
-    text-decoration: none;
-    border: 1px solid #222;
-    border-radius: 8px;
-    color: #222;
-  }
-  
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px 40px;
-  }
-  
-  section {
-    background: white;
-    margin-bottom: 24px;
-    padding: 24px;
-    border-radius: 10px;
-  }
+}
