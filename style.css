@@ -1,5 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #1f2933;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 35px;
+  color: #cbd5e1;
+}
+
 .featured-project {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   background: white;
   color: #1f2933;
@@ -9,36 +41,97 @@
 }
 
 .featured-project h3 {
-  font-size: 2rem;
-  margin-bottom: 8px;
+  font-size: 2.1rem;
+  margin-bottom: 6px;
 }
 
 .featured-project p {
-  margin-bottom: 24px;
-  font-size: 1.05rem;
+  margin-bottom: 18px;
+  font-size: 1.08rem;
 }
 
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.button-group a,
-main section a {
+.button-group a {
   display: inline-block;
-  text-decoration: none;
+  min-width: 190px;
+  text-align: center;
   background-color: #2563eb;
   color: white;
-  padding: 14px 28px;
+  text-decoration: none;
+  padding: 16px 28px;
   border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.3s ease;
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.button-group a:hover,
-main section a:hover {
+.button-group a:hover {
   background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+main section {
+  background: white;
+  margin-bottom: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main section a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+main section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .featured-project,
+  main section {
+    padding: 20px;
+  }
+
+  .featured-project h3 {
+    font-size: 1.7rem;
+  }
+
+  .button-group a {
+    width: 100%;
+    max-width: 280px;
+  }
 }
