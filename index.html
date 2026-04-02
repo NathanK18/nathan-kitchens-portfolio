@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathan Kitchens — Full-Stack Developer</title>
+  <title>Nathan Kitchens Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -14,14 +14,14 @@
   <!-- HERO -->
   <header class="hero">
     <div class="hero-inner">
-      <div class="hero-tag">Available for opportunities</div>
+      <div class="hero-tag">Open to opportunities</div>
       <h1>Nathan<br><em>Kitchens</em></h1>
       <p class="role">Full-Stack Developer building database-driven web applications</p>
     </div>
     <div class="hero-scroll-hint">↓</div>
   </header>
 
-  <!-- FEATURED PROJECT (the "click 1" destination) -->
+  <!-- FEATURED PROJECT -->
   <section class="featured" id="featured">
     <div class="featured-label">Featured Project</div>
     <div class="featured-inner">
@@ -41,7 +41,9 @@
           </a>
           <a class="btn btn-secondary" href="https://github.com/NathanK18/golfer-collection" target="_blank" rel="noopener">
             <span class="btn-icon github-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385..."/>
+              </svg>
             </span> See the Code
           </a>
         </div>
@@ -57,13 +59,6 @@
             <div class="mock-table">
               <div class="mock-th"></div><div class="mock-th"></div><div class="mock-th"></div><div class="mock-th"></div>
               <div class="mock-td w60"></div><div class="mock-td w40"></div><div class="mock-td w50"></div><div class="mock-td w30"></div>
-              <div class="mock-td w50"></div><div class="mock-td w60"></div><div class="mock-td w40"></div><div class="mock-td w50"></div>
-              <div class="mock-td w40"></div><div class="mock-td w50"></div><div class="mock-td w60"></div><div class="mock-td w40"></div>
-            </div>
-            <div class="mock-pagination">
-              <span class="mock-page active"></span>
-              <span class="mock-page"></span>
-              <span class="mock-page"></span>
             </div>
           </div>
         </div>
@@ -88,28 +83,56 @@
     <section class="card" id="projects">
       <div class="section-num">02</div>
       <h2>Projects</h2>
+
+      <!-- Golf Project -->
       <div class="project-card">
         <div class="project-header">
           <h3>Golf Stats Manager</h3>
           <div class="project-links">
-            <a class="pill-btn pill-primary" href="https://nkgolfmanager.golf" target="_blank" rel="noopener">Live App ▶</a>
-            <a class="pill-btn pill-secondary" href="https://github.com/NathanK18/golfer-collection" target="_blank" rel="noopener">GitHub</a>
+            <a class="pill-btn pill-primary" href="https://nkgolfmanager.golf" target="_blank">Live App ▶</a>
+            <a class="pill-btn pill-secondary" href="https://github.com/NathanK18/golfer-collection" target="_blank">GitHub</a>
           </div>
         </div>
         <p>
           A production-ready full-stack app that lets golfers track rounds, manage player records,
           and analyse performance trends — all backed by a relational SQL database.
-          What makes it interesting: the app handles full CRUD with server-side filtering, sorting,
-          and pagination so the UI stays fast even as the dataset grows.
-          Under the hood, parameterised queries and a normalised schema keep the data layer clean
-          and the API endpoints composable.
         </p>
         <div class="tech-tags">
-          <span>SQL</span><span>CRUD</span><span>Filtering</span><span>Sorting</span><span>Pagination</span>
+          <span>SQL</span><span>CRUD</span><span>Filtering</span><span>Pagination</span>
         </div>
       </div>
+
+      <!-- Battleship Project (NEW) -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Distributed Multiplayer Battleship</h3>
+          <div class="project-links">
+            <a class="pill-btn pill-primary" href="https://p01--frontend--zm8jxh5c8bph.code.run/" target="_blank">
+              Live App ▶
+            </a>
+            <a class="pill-btn pill-secondary" href="https://github.com/psychedelic-theory/Distributed-Multiplayer-Battleship" target="_blank">
+              GitHub
+            </a>
+          </div>
+        </div>
+        <p>
+          A distributed, multiplayer Battleship game built with a server-authoritative architecture.
+          Supports multiple players, persistent game state, and structured API interactions.
+          Designed to enforce game rules on the backend, manage turn-based sequencing,
+          and maintain player statistics across sessions.
+        </p>
+        <div class="tech-tags">
+          <span>Flask</span>
+          <span>REST API</span>
+          <span>Multiplayer</span>
+          <span>State Management</span>
+          <span>Distributed Systems</span>
+        </div>
+      </div>
+
     </section>
 
+    <!-- CONTACT -->
     <section class="card contact-card" id="contact">
       <div class="section-num">03</div>
       <h2>Contact</h2>
@@ -118,7 +141,7 @@
           <span class="contact-label">Email</span>
           <span class="contact-val">nkitche@clemson.edu</span>
         </a>
-        <a href="https://github.com/NathanK18" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://github.com/NathanK18" target="_blank" class="contact-item">
           <span class="contact-label">GitHub</span>
           <span class="contact-val">github.com/NathanK18</span>
         </a>
